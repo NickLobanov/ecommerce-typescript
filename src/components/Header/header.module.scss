@@ -1,0 +1,46 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 39px 25px;
+}
+
+.list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.listItem {
+    font-size: 12px;
+    line-height: 21px;
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    color: #58595B;
+    letter-spacing: 3px;
+    margin-right: 25px;
+    &:last-child {
+        margin-right: 0;
+    }
+
+    @media screen and (max-width: 900px) {
+        display: none;
+    }
+}
+
+.burgerMenu {
+    display: none;
+
+    @media screen and (max-width: 900px) {
+        display: block;
+    }
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
