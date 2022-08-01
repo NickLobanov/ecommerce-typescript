@@ -1,0 +1,108 @@
+.sliderWrapper {
+
+    @media screen and (max-width: 768px) {
+        height: 700px;
+    }
+    @media screen and (max-width: 600px) {
+        height: 500px;
+    }
+
+    :global(.swiper-pagination-bullet) {
+      background-color: transparent;
+      border: 1px solid #fff;
+      width: 16px;
+      height: 16px;
+      margin-bottom: 50px;
+      opacity: 1;
+    }
+  
+    :global(.swiper-pagination-bullet-active) {
+        background-color: #fff;
+    }
+
+    :global(.swiper-pagination) {
+        bottom: 15%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 114px;
+        display: flex;
+        justify-content: space-between;
+
+        @media screen and (max-width: 768px) {
+            bottom: 3%;
+        }
+    }
+}
+
+.sliderContainer {
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+    }
+}
+
+.sliderImg {
+    @media screen and (max-width: 768px) {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    @media screen and (max-width: 600px) {
+        object-fit: cover;
+    }
+}
+
+.sliderDescription {
+    position: absolute;
+    top:50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+    transform: translate(0, -50%);
+}
+
+.title {
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 86px;
+    color: #fff;
+    margin-bottom: 16px;
+
+    @media screen and (max-width: 768px) {
+        font-size: 30px;
+    }
+}
+
+.description {
+    padding: 25px;
+    width: 428px;
+    text-align: center;
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    color: #58595B;
+    margin-bottom: 35px;
+    background-color: #fff;
+
+    @media screen and (max-width: 768px) {
+        font-size: 14px;
+        width: 246px;
+    }
+}
+
+.image {
+    width: 110px;
+    height: 110px;
+
+    @media screen and (max-width: 768px) {
+        width: 41px;
+        height: 41px;
+    }
+}
