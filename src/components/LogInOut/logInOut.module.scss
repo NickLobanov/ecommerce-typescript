@@ -1,0 +1,88 @@
+%logInText {
+    font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #58595B;
+    margin: 0;
+}
+
+.LogInContainer {
+    width: 493px;
+    position: relative;
+    background-color: #F9F8F6;
+    padding: 45px 55px 95px 55px;
+    text-align: center;
+
+    @media screen and (max-width: 768px) {
+        width: 90%;
+        box-sizing: border-box;
+    }
+}
+
+.LogInTitle {
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    font-size: 48px;
+    line-height: 60px;
+    color: #58595B;
+    margin: 0
+}
+
+.LogInSubtitle {
+    @extend %logInText;
+    margin-bottom: 24px;
+    margin-top: 24px;
+
+    span {
+        color: #C18562;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
+.inputWrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.LogInInput {
+    width: 100%;
+    padding: 15px 10px;
+    box-sizing: border-box
+}
+
+.labelWrap {
+    @extend %logInText;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+
+.LogInButton {
+    min-width: 160px;
+    color: #fff;
+    background-color: #58595B;
+    border: none;
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 5px;
+    margin-top: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.closeBtn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    cursor: pointer;
+}
+
+.fogotPass {
+    @extend %logInText;
+    color: #C18562;
+    text-decoration: underline;
+    text-align: end;
+    cursor: pointer;
+}
